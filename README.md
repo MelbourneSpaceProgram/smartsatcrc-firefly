@@ -28,6 +28,6 @@ Imagery captured on the Sentinal 2 was used to collect a dataset of bushfire ima
 
 The following is an example image that has been converted to RGB from a stimulating combination of multispectral channels:
 
-
+![](satellite%20imagery%20example.png)
 
 
