@@ -15,7 +15,7 @@ The first step of developing the segmentation model was to find existing Pytorch
 
 The models were adopted from publically available and MIT liscenced repositories and asigned the following numbers:
 * SegNet1 ([repo link](https://github.com/trypag/pytorch-unet-segnet))
-* SegNet2 (([repo link](https://github.com/delta-onera/segnet_pytorch))
+* SegNet2 ([repo link](https://github.com/delta-onera/segnet_pytorch))
 * SegNet6 ([repo link](https://github.com/say4n/pytorch-segnet))
 
 Evaluation was conducted on cloud imagery adopted from a project that inquired about the effectiveness of UNets for cloud segmentation ([link](https://www.kaggle.com/cordmaur/38-cloud-simple-unet)). The data comprised of imagery with 4 input channels -- red, green, blue and near infrared -- and target masks that identified the presence of cloud in the image. It was assumed that testing the SegNets on this data would reliably reflect the models' generalisability to bushfire smoke. 
