@@ -18,13 +18,15 @@ The models were adopted from publically available and MIT liscenced repositories
 * SegNet2 (([repo link](https://github.com/delta-onera/segnet_pytorch))
 * SegNet6 (([repo link](https://github.com/say4n/pytorch-segnet))
 
-Evaluation was conducted on cloud imagery adopted from a project that inquired about the effectiveness of UNets for cloud segmentation (([link](https://www.kaggle.com/cordmaur/38-cloud-simple-unet)). The data comprised of imagery with 4 input channels -- red, green, blue and near infrared -- and target masks that identified the presence of cloud in the image. It was assumed that testing the SegNets on this data would reliably reflect the models' generalisability to bushfire smoke. 
+Evaluation was conducted on cloud imagery adopted from a project that inquired about the effectiveness of UNets for cloud segmentation ([link](https://www.kaggle.com/cordmaur/38-cloud-simple-unet)). The data comprised of imagery with 4 input channels -- red, green, blue and near infrared -- and target masks that identified the presence of cloud in the image. It was assumed that testing the SegNets on this data would reliably reflect the models' generalisability to bushfire smoke. 
 
 ### Model Training 
 Model training was carried out on a combination of using Google Colab, Google Cloud Platform instances and Amazom Sagemaker. The first two were used in the begninning as the team had prior experience with these platforms. As the project progressed, Amazon Sagemaker was adopted as the primary platform for training, hyperparameter tuning and hosting data via S3 buckets. 
 
 ### Smoke Segmentation Data
 Imagery captured on the Sentinal 2 was used to collect a dataset of bushfire imagery. This 12 channel mutlispectural imagery was downloaded and labelled via LabelBox. Given that the images are thouasands of pixels tall and wide, they are to be sampled from using a croping size of approximately 300 by 300 pixels, depending on the model being used. Prior to combining the spectral channels, they were required to be interpolated to have the same resolution. The models then are to be trained using random cropping and various data augmentation techniques such as rotation and random flipping. 
+
+The following is an example image that has been converted to RGB from a stimulating combination of multispectral channels:
 
 
 
