@@ -7,7 +7,7 @@ A Machine Learning model that predicts communication blackout areas caused by bu
 
 # Repository Outline
 ## Classification
-As an initial step, the team developed classification models that can differentiate between smoke and non-smoke images. Model development was motivated by the study entitled "SmokeNet: Satellite Smoke Scene Detection Using Convolutional Neural Network with Spatial and Channel-Wise Attention". Using the data made public by the paper's authors ([link to authors' page with dataset](http://complex.ustc.edu.cn/2019/0802/c18202a389656/page.htm), the team deployed various convolutional neural networks --  afforded by the Pytorch library. As a result, a greater familiarity with the framework was developed and the potential to utilise classification as a pre-processing step in the payload. 
+As an initial step, the team developed classification models that can differentiate between smoke and non-smoke images. Model development was motivated by the study entitled "SmokeNet: Satellite Smoke Scene Detection Using Convolutional Neural Network with Spatial and Channel-Wise Attention". Using the data made public by the paper's authors ([link to authors' page with dataset](http://complex.ustc.edu.cn/2019/0802/c18202a389656/page.htm)), the team deployed various convolutional neural networks --  afforded by the Pytorch library. As a result, a greater familiarity with the framework was developed and the potential to utilise classification as a pre-processing step in the payload. 
 
 ## Segmentation
 ### Model Testing
