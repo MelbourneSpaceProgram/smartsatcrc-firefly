@@ -1,9 +1,9 @@
 # SmartSat CRC Ideation Challange 01: Firefly
-This is a repository containing code for training and implementing machine learning algorithms for the SmartSat Ideation Challenge 01: Firefly. The algorithms are implemented in Python using the Pytorch framework and trained using Amazon Sagemaker. The algorithms comprise of various segmenation models for the purpose of identifying and geographically isolating bushfire smoke. This is then used to estimate the effects of signal attenuation through smoke and fire -- a known problem with the ability to create "signal backspots".
-The models are to be deployed on the NVIDIA Jetson Nano to form a payload on a stratospheric balloon, with the aim of providing real-time analysis of hyperspectral imagery.
+This is a repository containing code for training and implementing machine learning algorithms for the SmartSat Ideation Challenge 01: Firefly. The algorithms are implemented in Python using the Pytorch framework and trained using Amazon Sagemaker. The algorithms comprise of various segmenation models for the purpose of identifying and geographically isolating bushfire smoke. This is then used to estimate the effects of signal attenuation through smoke and fire -- a known problem with the ability to create "signal blackspots".
+The models are to be deployed on the NVIDIA Jetson Nano to form a stratospheric balloon payload, with the aim of providing real-time analysis of hyperspectral imagery.
 
 # The Project MVP
-A Machine Learning model that predicts communication blackout areas caused by bush-fire and smoke using active cell tower location and multispectral imagery.
+A Machine Learning model that predicts communication blackout areas caused by bushfire and smoke using active cell tower location and multispectral imagery.
 
 # Repository Outline
 ## Classification
@@ -13,7 +13,7 @@ As an initial step, the team developed classification models that can differenti
 ### Model Testing
 The first step of developing the segmentation model was to find existing Pytorch implementions of effective architectures. Although UNets were considered, the team focused on Segnets because the former is used primarily for medical imaging. Provided more time, a wider selection of architecures will be tested.
 
-The models were adopted from publically available and MIT liscenced repositories and asigned the following numbers:
+The models were adopted from publically available and MIT liscenced repositories and assigned the following numbers:
 * SegNet1 ([repo link](https://github.com/trypag/pytorch-unet-segnet))
 * SegNet2 ([repo link](https://github.com/delta-onera/segnet_pytorch))
 * SegNet6 ([repo link](https://github.com/say4n/pytorch-segnet))
